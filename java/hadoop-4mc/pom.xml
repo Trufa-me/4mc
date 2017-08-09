@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-     <parent>
-         <groupId>com.hadoop.fourmc</groupId>
-         <artifactId>parent</artifactId>
-         <version>1.0</version>
-     </parent>
+     <!--<parent>-->
+         <!--<groupId>com.hadoop.fourmc</groupId>-->
+         <!--<artifactId>parent</artifactId>-->
+         <!--<version>1.0</version>-->
+     <!--</parent>-->
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -20,7 +20,7 @@
 
     <groupId>com.hadoop.fourmc</groupId>
     <artifactId>hadoop-4mc</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <packaging>jar</packaging>
 
     <name>4mc</name>
@@ -49,6 +49,18 @@
         </developer>
     </developers>
 
+    <distributionManagement>
+        <repository>
+            <id>private-nexus</id>
+            <name>Trufa Eldorado Nexus</name>
+            <url>http://pilot.eldorado.trufa.local:8081/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>private-nexus-snapshots</id>
+            <name>Trufa Eldorado Nexus Snapshots</name>
+            <url>http://pilot.eldorado.trufa.local:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <dependencies>
 
